@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="32dp">
+
+    <EditText
+        android:id="@+id/dialog_input_remind_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="Remind Time"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_add_event_toolbar" />
+
+    <EditText
+        android:id="@+id/dialog_input_threshold"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Threshold"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dialog_input_remind_time"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_input_remind_time" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dialog_add_event_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dialog_input_remind_period"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Remind Period"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dialog_input_remind_time"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_input_threshold" />
+
+    <SeekBar
+        android:id="@+id/setting_seekbar_remind_period"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:saveEnabled="true"
+        android:thumb="@drawable/ic_desc_white_24dp"
+        android:max="200"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_input_remind_period"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialog_input_remind_period"
+        app:layout_constraintTop_toTopOf="@+id/dialog_input_remind_period" />
+
+    <SeekBar
+        android:id="@+id/setting_seekbar_remind_time"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:saveEnabled="true"
+        android:thumb="@drawable/ic_desc_white_24dp"
+        android:max="200"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_input_remind_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialog_input_remind_time"
+        app:layout_constraintTop_toTopOf="@+id/dialog_input_remind_time" />
+
+    <SeekBar
+        android:id="@+id/setting_seekbar_threshold"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:saveEnabled="true"
+        android:thumb="@drawable/ic_desc_white_24dp"
+        android:max="200"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_input_threshold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialog_input_threshold"
+        app:layout_constraintTop_toTopOf="@+id/dialog_input_threshold" />
+
+</android.support.constraint.ConstraintLayout>

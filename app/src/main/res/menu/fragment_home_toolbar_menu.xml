@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_ascend"
+        android:icon="@drawable/ic_asc_white_24dp"
+        android:title="@string/label_asc"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_item_descend"
+        android:icon="@drawable/ic_desc_white_24dp"
+        android:title="@string/label_desc"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_item_new_event"
+        android:icon="@drawable/ic_add_box_green_24dp"
+        android:title="@string/label_new_event"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_setting_time"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/label_setting"
+        android:visible="true"
+        app:showAsAction="always" />
+</menu>

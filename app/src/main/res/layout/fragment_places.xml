@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingEnd="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".view.fragments.PlacesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/map"-->
+    <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginBottom="48dp"-->
+    <!--map:layout_constraintBottom_toBottomOf="parent"-->
+    <!--map:layout_constraintEnd_toEndOf="parent"-->
+    <!--map:layout_constraintStart_toStartOf="parent"-->
+    <!--map:layout_constraintTop_toBottomOf="@+id/textView3"-->
+    <!--map:layout_constraintVertical_bias="0.231"></fragment>-->
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></com.google.android.gms.maps.MapView>
+
+    <Button
+        android:id="@+id/places_prev_location"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#404040"
+        android:foreground="@drawable/ic_chevron_left_black_24dp"
+        android:shadowColor="#404040"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.6"
+        app:layout_constraintStart_toEndOf="@+id/z_in"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/places_current_location"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="@drawable/ic_place_white_24dp"
+        android:shadowColor="#404040"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.6"
+        app:layout_constraintBottom_toBottomOf="@+id/places_prev_location"
+        app:layout_constraintEnd_toStartOf="@+id/places_next_location"
+        app:layout_constraintStart_toEndOf="@+id/places_prev_location"
+        app:layout_constraintTop_toTopOf="@+id/places_prev_location"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/places_next_location"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#404040"
+        android:foreground="@drawable/ic_chevron_right_black_24dp"
+        android:shadowColor="#404040"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.6"
+        app:layout_constraintBottom_toBottomOf="@+id/places_current_location"
+        app:layout_constraintEnd_toStartOf="@+id/z_out"
+        app:layout_constraintTop_toTopOf="@+id/places_current_location" />
+
+    <Button
+        android:id="@+id/z_in"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:foreground="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/places_current_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/places_prev_location" />
+
+    <Button
+        android:id="@+id/z_out"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:foreground="@drawable/ic_remove"
+        app:layout_constraintBottom_toBottomOf="@+id/places_current_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/places_current_location" />
+
+</android.support.constraint.ConstraintLayout>

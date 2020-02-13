@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_item_zoom_in_map"
+        android:icon="@drawable/ic_add"
+        android:title="@string/label_setting"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menu_item_zoom_out_map"
+        android:icon="@drawable/ic_remove"
+        android:title="@string/label_setting"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+
+
+
+
+
+    <item
+        android:id="@+id/menu_item_setting_time"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/label_setting"
+        android:visible="true"
+        app:showAsAction="always" />
+</menu>

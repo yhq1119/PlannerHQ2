@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navi_botton_width">100dp</dimen>
+    <dimen name="custome_maker_padding">5dp</dimen>
+    <dimen name="custom_marker_image">20dp</dimen>
+</resources>
